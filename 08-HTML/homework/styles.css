@@ -1,0 +1,22 @@
+h1{
+    color: blue;
+}
+
+img{
+    width: 400px;
+}
+
+#thridDiv{          /* para llamar a un id se debe colocar primero un # */
+    height: 500px;
+    width: 600px;
+    background-color: cadetblue;
+
+    padding: 50; /* padding es un margen*/
+    border: 10px solid blue;
+}
+
+#spanDiv{
+    font-size: 18px;
+    margin: 50px;
+}
+
