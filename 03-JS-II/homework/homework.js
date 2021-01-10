@@ -5,10 +5,8 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x>y){
-    return x;
-  }
-    return y;
+  if (x>y) return x;
+   else return y;
   }
 
 function saludo(idioma) {
@@ -27,6 +25,22 @@ function saludo(idioma) {
   }else{
     return "Hola!";
   }
+    //otra manera de hacerlo
+ /* switch(idioma){
+    case "aleman" :
+      return "Guten Tag!";
+    
+    case "mandarin" :
+      return "Ni Hao!";
+    
+    case "ingles" :
+      return "Hello";
+
+    default : 
+      return "Hola!";
+
+  }*/
+
 }
 
 function esDiezOCinco(numero) {
@@ -34,6 +48,10 @@ function esDiezOCinco(numero) {
     // De lo contrario, devuelve "false"
     // Tu código:
     return numero === 10 || numero === 5;
+
+  //otra manera de hacerlo 
+    /*if(numero===10 || numero ===5) return true;
+      else return false;*/
    }
 
 function estaEnRango(numero) {
@@ -41,6 +59,12 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   return numero<50 && numero>20;
+ 
+  //otra manera de hacerlo 
+    /*if(numero <50 && numero >20) return true;
+      else return false;
+   }*/
+
 }
 
 function esEntero(numero) {
@@ -59,10 +83,9 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
- 
+  if (numero % 3 === 0 && numero % 5 === 0) return 'fizzbuzz';
   if (numero % 3 === 0) return 'fizz';
   if(numero % 5 === 0) return 'buzz';
-  if (numero % 3 === 0 && numero % 5 === 0) return 'fizzbuzz';
   return numero;
 }
 

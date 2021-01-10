@@ -60,24 +60,21 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x===y){
-return true;}
-else{
-  return false;
-}
-
+  if (x===y) return true;
+  else return false;
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length===str2.length){
+  /*if (str1.length===str2.length){
     return true;
   }
   else{
     return false;
-  }
+  }*/
+  return str1.length===str2.length;
 }
 
 function menosQueNoventa(num) {
@@ -96,12 +93,8 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num>50){
-    return true;
-  }
-  else{
-    return false;
-  }
+  if(num>50) return true;
+    else return false;
 }
 
 function obtenerResto(x, y) {
@@ -114,22 +107,17 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num %2 ===0){
-    return true;
-  }else{
-    return false;
-  }
+  if (num %2 ===0)return true;
+  else return false;
+
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 === 1){
-    return true;
-  }else{
-    return false;
-  }
+  if (num % 2 !== 1) return true;
+  else return false;
 }
 
 function elevarAlCuadrado(num) {
@@ -159,15 +147,15 @@ function redondearNumero(num) {
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
-  // Tu código:
+  // Tu código: este parametro redondea para arriba es el metodo .flor
   return Math.ceil(num);
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
-  // Tu código:
- 
+  // Tu código: temple literals
+ //return `${str}!`
   return str + '!';
 }
 
@@ -175,6 +163,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+  //return `${nombre}+{apellido}`
   return nombre + " " + apellido;
 }
 
@@ -188,8 +177,7 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  var areaTriangulo = alto*ancho;
-  return areaTriangulo;
+  return alto*ancho;
 }
 
 

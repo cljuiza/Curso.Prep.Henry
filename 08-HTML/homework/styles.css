@@ -11,12 +11,22 @@ img{
     width: 600px;
     background-color: cadetblue;
 
-    padding: 50; /* padding es un margen*/
-    border: 10px solid blue;
+    /*padding: 50;*/ /* padding es un margen a todo el contenido tambien se puede utilizar a casa lado asi:*/
+
+    padding-left: 100 ;
+    padding-top: 20;
+
+    border: 10px solid blue; /*crea un linea de borde */
+    
+    margin: 20px;   /*da una margen exterior al border tambien se puede asigar a cada lado */
+    margin-left: 380px;
 }
 
-#spanDiv{
+#spanDiv{ 
     font-size: 18px;
     margin: 50px;
 }
 
+.divClass{
+    background-color: beige;
+}
