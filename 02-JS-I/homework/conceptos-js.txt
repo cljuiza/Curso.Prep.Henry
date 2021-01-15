@@ -1,0 +1,68 @@
+
+Variables : Las variables en los lenguajes de programacion como en JavaScript son contenedores para almacenar valores de datos. 
+            estos datos pueden ser una palabra (Strings), numeros enteros y decimales (int, double) o pueden ser de tipo booleano
+            (true o false) en JavaScript para declarar una variable solo es necesario utilizar la palabra clave val, un espacio
+            y el nombre de la variable. ejemplo :
+
+            var nombre ="Juan"; // notese que al declara una vriable de tipo String el valor debe estar entre comillas dobles o sensillas
+            var numero = 4;     //al declara un numero ya sea entero o decimal no es necesario encerrarlo entre comillas.
+            var tiene5Años = false; // este tipo de varibles false o true es muy utilizado en dar respuesta a condicionales o 
+                             preguntas en el cual solo se responde si es verdadero o falso.
+
+Strings : en programacion es muy ocurrente utilizar este tipo de dato el cual nos ayuda a declarar un variable que puede contiener una 
+        cadena de caracteres, ya sea para guardar el nombre de una persona, cosa, actividad, cualquier palabra que nos ayude a 
+        dar respuesta a una solucion, su declaracion en js es de la siguiente manera:
+
+        String vehiculo = "toyota"; // recordar que despues de darle el nombre a la variable es necesario itilizar el 
+          ▲       ▲          ▲          caracter igual (=) y finalizar con punto y coma (;) para decir que la line de codigo 
+          |       |          |          finaliza ahi.
+        Tipo    nombre      Valor
+       de dato  de la       Inicial
+                variable
+
+Funciones (argumentos, return) : En programacion tambien es muy usual ver funciones definidas, estas de utilizan para contener dentro
+                                de cierta area o lineas de codigo una tarea. para que una funcion funciones es necesario que ella
+                                obtenga cierto valores o datos de entrada para poder devolver una salida. para declara una funcion en js
+                                es necesario utiliza la palabra clave function, seguido del nombre de la funcion + una () los cuales 
+                                contenera parametros o argumentos que pasaremos dentro de ella y dos signos de llaves  {  }  para la
+                                delimitara la funcion.
+                                Ademas, para poder devolver un valor utilizamos la instruccion return el cual ayuda a devolver los parametros
+                                fuera de la funcion. acontinuacion veremos un ejemplo.
+        
+        function suma (numero1, numero2){
+            return numero1+numero2;
+        } 
+
+Esta funcion tiene como nombre suma este es muy importante a la hora de llamarla, vemos que espera decibir dos datos (numero1 y numero2)
+y ademas dentro de la funcion se realiza un calculo que sera devuelto mediante la instruccion return.
+
+para posteriormente poder enviar y recibir un valor de la funcion, es necesario declarar una variable donde guarda el valor retornado  
+ y se llama la funcion con el nombre y entre () enviando los parametros solicitados,asi:
+
+ var resultado = suma (5,4);
+
+en la nueva variables declarada llamada resultado se guardara el numero 9 ya que en este caso la funcion realizara el proceso matematico 
+para sumar los dos numero enviados 5 y 4.
+
+Declaraciones if : La sentencia if en programación se utiliza para evaluar una condicion y realizar una tarea dentro de ella si 
+                    se cumple true o si es falsa false. la sintaxis de if esta compuesta de la siguiente manera :
+        
+    Estructura 
+    condicional    condicion
+        ▼          ▼
+        if (resultado = 9){
+
+            console.log ("el resultado es:" + resultado);
+           // instrucciones que se ejecutan si la condicion se cumple, en este caso se imprimira el resultado es: 9;
+        }
+        else {
+            // instrucciones si es falsa la condicion 
+             console.log ("el resultado es diferente de 9 ");
+        }
+
+
+Valores booleanos (true, false) : los  booleanos solo pueden tener dos valores verdadero-true o falso-false. puede activar o 
+                                desactivar una condicion o retornar un valor 0 o 1.
+                                ejemplo de una variable booleana
+                                
+        var meEncantaJavascript = true;

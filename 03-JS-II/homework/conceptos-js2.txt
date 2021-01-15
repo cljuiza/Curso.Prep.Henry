@@ -1,0 +1,46 @@
+
+for: la instruccion for es utilizada para crear un bucle (una repeticion de codigo este puede ser infinito) hasta cuando 
+queramos que pare o deje repetirlo  si se cumpla la condicion definida. el bucle for cuenta con 3 partes dentro de sus
+ parentesis como lo vemos acontinuacion :
+
+                         1. iniciacion, se declara el valor incial que tendra el loop, este se evalua antes de ejectar el bucle
+                         2. condicion, este parametro evalua y comprueba si la condicion es cierta para ello podemos los diferentes
+                         operadores de comparacion (> >= < <= === !==).
+       1    2   3        3. incremento ++ o decremento --, en este caso estamos diciendo que ingremente de uno en uno. 
+       ▼    ▼   ▼
+ for (i=1;i<=20;i++){
+     // instruccion que se repetira hasta cuando se cumpla la condicion
+     console.log (i); // en este ejemplo se mostran los numeros de 1 al 20
+ }
+
+ estos ciclos for tienen una gran utilidad ya sea el perdir muchos datos, guardas en arrays, sin necesidad de 
+
+OPERADORES LOGICOS :
+ En las sentencias if podemos utilizar operadores logicos que ayudaran a definir mejor las condiciones
+
+operador
+  
+  && -> AND ayuda adicionar otra condicion en donde ambas deben ser true para que proceda al interior del if ejemplo
+
+        if(9>1 && 1===1){ 
+             console.log('Ambas declaraciones son ciertas, este código se ejecutará');
+        }
+        // vemos que las el Y o && nos ayuda a definir una nueva condicion que debera cumplirse para que pueda acceder al if.
+  
+  || -> OR este tipo de operador agrega una condicion en donde nos indica que se puede cumplir alguna de las condiciones definidas 
+        para acceder dentro del if, ejemplo
+
+        if (10 === 9 || 1 < 9) {
+        console.log('una declaracion es verdadera, por lo que || devolverá un true y este código se ejecutará');
+        }       
+        // vemos que se evalua la primera condicion si se cumple accede dentro del if, en este caso no se cumple la condicion 
+         ahora vien el or hace que vaya y evalue la siguiente endicion, en este caso 1 es mejor que nueve es por eso que deja 
+         acceder dentro del if.
+
+   ! -> NOT este operador le cambia el sentido a las cosas, es de tipo booleano quiere decir que si la condicion es verdadera y
+        utiliza ! se vuelve falso por ende no entraria deltro del if, ejemplo :
+
+        if (!(7 === 7)) {
+         console.log('7 es igual a , de modo que la expresión devuelve true. El operador ! devolverá lo contrario de eso, por lo que este código no se ejecutará');
+        }
+

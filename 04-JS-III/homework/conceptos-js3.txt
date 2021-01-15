@@ -1,0 +1,42 @@
+
+	* Arrays = un array es un tipo de dato que permite almacenar un conjunto de datos, tambien es llamado como vector. cada dato 
+                almacenado dentro del array es llamado elemento y al numero de elementos del array se le llama tamaño.
+                asi se define un arreglo :
+
+        var nombresDeEstudiantes = ['luis','maria','pedro'];
+    
+    en este orden ideas le damos un nombre al arrego en este caso es nombresDeEstudiantes, posterior mente del = definimos este []
+    cada uno de los elementos, la primera posicion del elemento de una array es 0 , es este caso el elemento 0 seria luis.
+
+    ->existe una propiedad .length el cual nos ayuda a contar cuantos elementos hay dentro del array ejemplo
+
+        nombresDeEstudiantes.length; // nos mostrar un numero 3 
+
+    ->podremos llamar a cada uno de los elementos asi 
+        
+        nombresDeEstudiantes[0];
+    
+    o modificarlo asi:
+         nombresDeEstudiantes[0] ='juan';
+
+    ->tambien podremos definir un arreglo sin elementos y posteriormente agregar uno a uno, asi :
+
+         var array = [];
+     
+     ->para agregar elementos al fina del array debemos utilizar el metodo .push  y para agregar elementos al primero lugar 
+     utilizamos .unshift de la siguiente manera 
+
+        array.push(7); //agragamos el numero 7 al arreglo 
+        array.push(5); //agragamos el numero 7 al arreglo  es arreglaro quedaria [7,5]
+
+        nombresDeEstudiantes.unshift('maria');  // agregamos maria en la primera posicion del arreglo nombresDeEstudiantes
+
+    para eliminar un elementos del arreglo utilizamos .pop (ultimo elementos del arreglo) o .shift (primer elemento del arreglo)
+
+        array.pop(); // en este caso eliminariamos el numero 5 el cual fue el ultimo en agregarse al arreglo 
+
+        array.shift(); // eliminariamos el nombre de maria que se agrego con .push
+
+
+
+

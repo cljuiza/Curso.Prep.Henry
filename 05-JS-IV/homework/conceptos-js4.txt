@@ -1,0 +1,79 @@
+
+
+    Objeto : un objeto es representado en js como un contenerdo de tipos de datos y es usado para guardar propiedades y
+     una propiedad es una asociacion entre un nombre o clave y un valor (key:valio) y asi poder acceder a deifinir el valor.
+    Los objetos pueden ser creados utilzando el constructor Object() o la sintaxis literal de objeto. 
+
+    // objeto forma literal 
+
+    var objeto = {
+
+        propiedad : valor,
+        propiedad2 : valor2;
+
+        // tambien se puede crear funciones dentro de un objeto y estas se les conoce como metodos
+        nombreDelMetodo : function(){
+            console.log('propiedad');   //  por lo general los metodos realizan un trabajo o instrucciones.
+        }
+    }
+
+como podemos ver en el ejemplo anterio primero se declara una variable con el nombre del objeto con un igual se abren 
+llaves y separando por , se crean las propiedades, 1 se da un nombre a la propiedad luego : u el valor de la propiedad,
+podemos crear todas las propiedades que deseemos.
+
+* los objetos pueden contener cualquie tipo de valor, ejemplo :
+
+    var mascota ={
+        nombre : 'muñeca',
+        raza :'golden',
+        edad :'2',
+        snaksPreferidos:['Cabanos','Galletas leche','Higado']
+    }
+
+* podemos acceder, cambiar y agregar propiedades y metodos de un objeto, existen dos fomas de hacerlo 
+  con operadores de miembros:
+
+    - Bracket notation // notacion de corchetes 
+    mascota['nombre']= 'lulu' // en este caso se modifico o se cambio el valor del nombre de la mascota.
+    mascota['edad']=3 // cambiamos su edad 
+    mascota['esterilizada']=true // en este caso agregamos una nueva prpiedad con un valor booleano
+    mascota['saludar']= function(){ console.log('guau');} // se creo un metodo que imprimira en pantalla guau cuando se llame.
+
+    - Dot notation // notacion por punto
+    mascota.nombre = 'mueñeca';  // se cambia el valor del nombre
+    mascota.hijos  = 2; // se crea una nueva propiedad 
+     mascota.hijosPor2 = function(){ console.log ('hijos por 2' + hijos*2) // se crea un metodo que multiplica la cantidad de hijos por 2
+    usuario.amigos.push(nuevoAmigo);
+    mascota.snaksPreferidos.push('pollo'); // se agrega un valor de ultimas al arreglo 
+
+* tambien podemos eliminar propiedades
+
+    delete mascota.hijosPor2; // eliminamos el metodo 
+
+Nota : el Dot notation solo se utiliza solo para forma literal
+
+podremos tener un objeto 
+
+const usuario = {
+    nombre: 'luis ',
+    contraseña: '123',
+    esMayorDeEdad: true,
+    edad: 42
+};
+
+var mayorDeEdad= 'esMayorDeEdad';
+usuario[mayorDeEdad] // aqui asocia el valor de la propiedad y devolvera un true
+
+var hijos = 'tieneHijos';
+usuario[hijos]=5; // agrega como key tiene hijos y valor de 5 al objeto
+
+Bucle for in : este se utiliza para poder iterar sobre las propiedades de objeto 
+
+for (let clave in usuario){
+    console.log(clave);
+    console.log(usuario[clave]);
+}
+podemos ver que se comienza igual pero entre paréntesis declararemos una variable y una
+palabra clave in y el nombre del objeto. Esto recorrerá cada clave del objeto y finalizará cuando se 
+hayan iterado todas las claves. Podemos usar esta clave, y la notación de corchetes, en nuestro bucle 
+for para acceder al valor asociado con esa clave.

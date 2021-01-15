@@ -1,0 +1,51 @@
+
+
+* `prototype` : hablamos de prototipe cuando creamos una funcion o metodo el cual funciona como plantilla y hereda metodos y propiedades.
+                ejemplo 
+
+ function Usuario(nombre, edad) {           //
+    this.nombre = nombre;                   // aqui se crea la funcion constructora
+    this.edad = edad;                       //
+}
+
+Usuario.prototype.introduccion = function(){                                            //
+    return 'Mi nombre es ' + this.nombre + ', y tengo  ' + this.edad + 'años de edad.'; // aqui se creo el metodo que heredara las 
+}                                                                                       // propiedades del objeto
+ // para crear un nuevo objeto se utiliza el Keyword new
+let li = new Usuario('Lina', 21);
+let luis = new Usuario('Luis', 40);
+
+//llamar valores 
+console.log(li.introduccion()); // Mi nombre es Lina, y tengo 21 años de edad.
+console.log(luis.introduccion()); // Mi nombre es lus, y tengo 40 años de edad.
+
+
+* _Constructors_ (de Clases)
+// otra manera de crear una fabrica de objetos se puede utilizar la siguiente sintaxis
+creado primero una clase donde alli se alojara una funcion contructora y los metodos que se necesiten 
+
+
+class Persona {
+  constructor(nombre,apellido){
+    this.nombre=nombre;
+    this.apellido=apellido;
+  }
+  getNombre(){
+    return this.nombre;
+  }
+  saludar(){
+    return 'hola' + this.nombre;
+  }
+}
+
+// para crear los objetos 
+var christian =new Persona('christian','juiza');
+var li =new Persona('Lina','Delgado');
+//para llamarlos 
+christian;
+li;
+//y los metodos
+li.saludar();
+
+//Estas clases tambien pueden extendersen 
+
